@@ -29,10 +29,10 @@ function Header() {
       </div>
 
       <ul className={ulStyle.ul}>
-        <li className={liStyle.li}><a href="/">Menu</a></li>
-        <li className={liStyle.li}><a href="/">Location</a></li>
-        <li className={liStyle.li}><a href="/">About</a></li>
-        <li className={liStyle.li}><a href="/">Contact</a></li>
+        <li className={liStyle.li}><a href="/react-product-page/">Menu</a></li>
+        <li className={liStyle.li}><a href="/react-product-page/">Location</a></li>
+        <li className={liStyle.li}><a href="/react-product-page/">About</a></li>
+        <li className={liStyle.li}><a href="/react-product-page/">Contact</a></li>
       </ul>
 
       <div className='text-white mr-3 lg:mr-5'>
