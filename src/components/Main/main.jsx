@@ -10,12 +10,12 @@ function Main() {
     }
 
     const leftSectionStyle = {
-        sm: 'px-10 font-bold font-[Poppins]',
+        sm: 'px-1 font-bold font-[Poppins] min-[375px]:grid min-[375px]:place-items-center',
         md: 'md:w-[595px] md:h-[613px] md:grid md:place-items-start',
     }
 
     const headTextStyle = {
-        sm: 'min-[375px]:text-5xl min-[375px]:mb-7 whitespace-nowrap leading-[102px] font-[800] duration-300',
+        sm: 'min-[375px]:text-6xl min-[375px]:mb-7 whitespace-nowrap leading-[102px] font-[800] duration-300 min-[375px]:grid min-[375px]:place-items-center',
         md: 'md:text-8xl md:grid md:place-items-start md:mb-9',
     }
     
@@ -25,15 +25,15 @@ function Main() {
     }
 
     const buttonOneStyle = {
-        sm: 'w-28 h-10 bg-[#D01C28] text-white text-xl hover:bg-white hover:text-[#D01C28] hover:border hover:border-[#D01C28] duration-300',
+        sm: 'w-24 h-8 text-lg bg-[#D01C28] text-white hover:bg-white hover:text-[#D01C28] hover:border hover:border-[#D01C28] duration-300',
     }
 
     const buttonTwoStyle = {
-        sm: 'w-28 h-10 text-[#5A5959] text-xl border-[1px] border-solid border-[#5A5959] hover:bg-[#5A5959] hover:text-white hover:border-none duration-300',
+        sm: 'w-24 h-8 text-lg text-[#5A5959] border-[1px] border-solid border-[#5A5959] hover:bg-[#5A5959] hover:text-white hover:border-none duration-300',
     }
 
     const buttonCommonStyle = {
-        md: 'md:w-28 md:h-8 md:text-xl',
+        md: 'md:w-28 md:h-10 md:text-xl',
     }
 
     const pTextStyle = {
@@ -49,8 +49,8 @@ function Main() {
     <div className={`${mainStyle.sm} ${mainStyle.md}`}>
         <div className={`${leftSectionStyle.sm} ${leftSectionStyle.md}`}>
             <div className={`${headTextStyle.sm} ${headTextStyle.md}`}>
-                <h1 className='min-[375px]:mb-3 md:-mb-0'>YOUR FEET</h1>
-                <h1 className='min-[375px]:mb-3 md:-mb-0'>DESERVE</h1>
+                <h1 className='min-[375px]:mb-5 md:-mb-0'>YOUR FEET</h1>
+                <h1 className='min-[375px]:mb-5 md:-mb-0'>DESERVE</h1>
                 <h1>THE BEST</h1>
             </div>
 
@@ -58,7 +58,7 @@ function Main() {
                 <p>YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR SHOES.</p>
             </div>
 
-            <div className='flex min-[375px]:gap-5 min-[375px]:mb-10 md:mb-9 md:gap-6'>
+            <div className='flex min-[375px]:gap-4 min-[375px]:mb-10 md:mb-9 md:gap-6'>
                 <button className={`${buttonOneStyle.sm} ${buttonCommonStyle.md}`}>Shop Now</button>
                 <button className={`${buttonTwoStyle.sm} ${buttonCommonStyle.md}`}>Category</button>
             </div>
