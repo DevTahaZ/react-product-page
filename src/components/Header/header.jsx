@@ -3,11 +3,11 @@ import logo from "../../assets/logo.svg"
 
 function Header() {
   const navStyle = {
-    nav: 'w-full h-[72px] flex justify-between items-center text-[#2E2E2E] font-bold'
+    nav: 'h-[72px] flex justify-between items-center text-[#2E2E2E] font-bold'
   }
 
   const ulStyle = {
-    ul: 'hidden lg:inline-flex lg:items-start lg:gap-9 lg:text-base 2xl:text-2xl'
+    ul: 'hidden md:inline-flex md:items-start md:gap-9 md:text-base'
   }
 
   const liStyle = {
@@ -15,9 +15,8 @@ function Header() {
   }
 
   const buttonStyle = {
-    sm: 'w-16 h-8 bg-[#D01C28] text-sm hover:bg-white hover:text-[#D01C28] hover:border hover:border-[#D01C28] duration-300',
-    lg: 'lg:w-20 lg:h-9',
-    twoXL: '2xl:w-24 2xl:h-10'
+    sm: 'min-[375px]:w-16 min-[375px]:h-8 bg-[#D01C28] text-sm hover:bg-white hover:text-[#D01C28] hover:border hover:border-[#D01C28] duration-300',
+    md: 'md:w-20 md:h-9',
   }
 
   return (
@@ -35,9 +34,9 @@ function Header() {
         <li className={liStyle.li}><a href="https://devtahaz.github.io/react-product-page/">Contact</a></li>
       </ul>
 
-      <div className='text-white mr-3 lg:mr-5'>
-        <button className={`${buttonStyle.sm} ${buttonStyle.lg} ${buttonStyle.twoXL}`}>Login</button>
-        <button className={`${buttonStyle.sm} ${buttonStyle.lg} ${buttonStyle.twoXL} ml-2 2xl:ml-4`}>Sign Up</button>
+      <div className='text-white min-[375px]:mr-3 md:mr-5'>
+        <button className={`${buttonStyle.sm} ${buttonStyle.md}`}>Login</button>
+        <button className={`${buttonStyle.sm} ${buttonStyle.md} min-[375px]:ml-2`}>Sign Up</button>
       </div>
     </nav>
   )
